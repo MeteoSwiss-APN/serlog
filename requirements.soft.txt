@@ -1,0 +1,4 @@
+click
+ipython
+matplotlib
+numpy

@@ -1,0 +1,32 @@
+++++++++++++++++++++++++++++++++++
++ serlog: serialize via log file +
+++++++++++++++++++++++++++++++++++
+
+SerLog constitutes a collection of scripts and code snippets for poor-man's serialization by writing data values to standard output, extract them from the log file, and further analyze and visualize the data.
+
+
+Files
+=====
+
+ * requirements.soft.txt -- Top-level Python dependencies with as few version restrictions as possible.
+
+ * scripts/ -- Contains main scripts.
+
+    - extract_tagged_lines.sh -- Extract lines preceded by a tag from a log file. Can handle huge files and clean up lines to which multiple processors have written simultaneously.
+
+    - sort_by_difference.py -- Given two files (created with extract_tagged_lines.sh) with values at unique points, find shared points and compute the difference in values.
+
+    - plot_deviations.py -- Plot the frequency distribution of the differences between points of one or more pairs of runs. The differences between each pair of runs is read from a difference files created with sort_by_difference.py.
+
+ * snippets/ -- Contains code snippets useful for writing values to standard output.
+
+    - TODO
+
+ * various/ -- Contains various scripts that might or might not be finished.
+
+
+Workflow
+========
+
+TODO
+
